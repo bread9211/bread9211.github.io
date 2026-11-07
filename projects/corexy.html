@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Custom CoreXY 3D Printer — Sunny Fang Engineering Portfolio">
+<title>Custom CoreXY 3D Printer | Sunny Fang</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body id="top">
+<a class="skip" href="#project">Skip to project</a>
+<header class="mast">
+  <div class="wrap bar">
+    <a class="mark" href="../index.html">Sunny Fang<span> / Engineering Portfolio</span></a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#experience">Work Experience</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap project-page" id="project">
+  <a class="button" href="../index.html#corexy">Back to projects</a>
+  <header class="section-title">
+    <div>
+      <p class="eyebrow">Personal Projects</p>
+      <h1>Custom CoreXY 3D Printer</h1>
+    </div>
+  </header>
+  <article class="project-details">
+<figure class="project-figure">
+<img src="../assets/images/corexy-printer.jpg" alt="Custom CoreXY 3D printer" width="1200" height="1600" loading="lazy" decoding="async">
+</figure>
+
+<p>Fused deposition modeling (FDM, also known as FFF) is the most common form of additive manufacturing. It essentially lays molten material in lines, building up an object layer by layer.</p>
+<p>There are two main types of FDM printers: bedslinger and CoreXY.</p>
+<p>A bedslinger moves the print bed back and forth on the Y axis, while a CoreXY moves the print bed up and down.</p>
+<p>I had a Bambu Lab A1 3D printer already, which is a popular bedslinger model. However, CoreXY printers are typically faster and have better print quality, since the model does not move around much during printing.</p>
+<p>As a result, I decided to try my hand at designing my own CoreXY printer instead of just buying one.</p>
+<p>I first modeled the printer in the computer-aided design (CAD) program Onshape. I took inspiration from the Voron 2.4 and Trident and the RatRig vCore 4 3D printers, which are popular open-source CoreXY designs.</p>
+<div class="project-gallery">
+<figure class="project-figure">
+<img src="../assets/images/corexy-v1.png" alt="V1 of the design using 4040 aluminum extrusions" width="658" height="698" loading="lazy" decoding="async">
+<figcaption>V1 of the design using 4040 aluminum extrusions</figcaption>
+</figure>
+<figure class="project-figure">
+<img src="../assets/images/corexy-v2.png" alt="V2 of the design (current)" width="635" height="695" loading="lazy" decoding="async">
+<figcaption>V2 of the design (current)</figcaption>
+</figure>
+<figure class="project-figure">
+<img src="../assets/images/corexy-v3.png" alt="V3 of the design (WIP) with enclosure" width="595" height="700" loading="lazy" decoding="async">
+<figcaption>V3 of the design (WIP) with enclosure</figcaption>
+</figure>
+</div>
+<h2>Specs: </h2><ul><li>Mainboard: BTT Octopus Pro v1.0 with Raspberry Pi 4B</li><li>Firmware: Klipper</li><li>Extruder: Orbiter v2.5 with Orbiter Filament Sensor and BTT Eddy leveling sensor</li><li>Hotend: Phaetus Rapido 2 UHF</li><li>Print area: 290mm x 290mm x 230mm</li><li>Temperature range: 0-350c hotend, 0-100c heatbed</li><li>Speeds: tested up to 500mm/s</li></ul>
+<h2>Current issues:</h2><ul><li>Current design (V2) cannot easily be enclosed due to the way the linear rails are mounted</li><li>Eddy current leveling sensor is not properly calibrated, resulting in the extruder printing too high</li><li>Lots of unused space in the Z axis</li><li>Cooling is not sufficient, could be either the fan ducts or the fan itself</li><li>Wiring is messy</li></ul>
+<h2>Plans for improvement:</h2><ul><li>Redesign the frame to be better enclosed and have a proper electronics mount (see image for V3 CAD)</li><li>Revisit extruder and try alternative cooling options</li><li>Recalibrate all sensors</li></ul>
+  </article>
+  <div class="actions">
+    <a class="button" href="../index.html#corexy">Back to projects</a>
+    <a class="button" href="#top">Back to top</a>
+  </div>
+</main>
+<footer class="wrap footer"><span>Sunny Fang / Engineering Portfolio</span></footer>
+</body>
+</html>

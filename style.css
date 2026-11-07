@@ -66,3 +66,94 @@ dt{color:var(--muted)}dd{margin:0;font-weight:600}
 @media(max-width:780px){.hero{grid-template-columns:1fr;gap:1.5rem;padding:45px 0 30px}.project-layout{grid-template-columns:1fr}.index{position:static}.wrap{width:calc(100% - 36px)}}
 @media(max-width:500px){.bar{flex-wrap:wrap;gap:.5rem;padding:.7rem 0}.note,.record{grid-template-columns:1fr}.note summary{justify-self:start}.diagram{max-width:260px}.contact,.footer{align-items:flex-start;flex-direction:column}.section-title{align-items:start}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Text-only project and resume entries. */
+.record{grid-template-columns:minmax(0,1fr)}
+.record-body p+p{margin-top:.65rem}
+.record-body h4{margin:1.1rem 0 .4rem}
+.record-body ul{padding-left:1.25rem;margin:.5rem 0}
+.record-body li+li{margin-top:.4rem}
+.intro>p:not([class]){margin-top:1rem;color:var(--muted)}
+@media(max-width:780px){.bar{flex-wrap:wrap;padding:.7rem 0}.mark{white-space:normal}}
+
+/* Full project descriptions use the same typography as the main portfolio. */
+.project-page {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.project-page h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: -.045em;
+}
+.project-details {
+  max-width: 78ch;
+}
+.project-details h2 {
+  margin: 1.5rem 0 .75rem;
+  font-size: 1.35rem;
+}
+.project-details p + p {
+  margin-top: 1rem;
+}
+.project-details li + li {
+  margin-top: .4rem;
+}
+
+/* Original portfolio images are served from this website's assets folder. */
+.project-thumbnail {
+  display: block;
+  align-self: stretch;
+}
+.project-thumbnail img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  background: var(--mint);
+}
+#projects .record {
+  grid-template-columns: 210px minmax(0, 1fr);
+  align-items: start;
+}
+.project-figure {
+  margin: 1.25rem 0;
+}
+.project-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  object-fit: contain;
+}
+.project-figure figcaption {
+  margin-top: .5rem;
+  color: var(--muted);
+  font-size: .85rem;
+}
+.profile .project-figure {
+  margin: 0;
+  padding: 1rem;
+  border-top: 1px solid var(--line);
+}
+.profile .project-figure img {
+  max-height: 260px;
+}
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.project-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1.25rem;
+}
+@media (max-width: 1000px) {
+  #projects .record { grid-template-columns: minmax(0, 1fr); }
+  .project-thumbnail img { height: 260px; }
+}
+@media (max-width: 600px) {
+  .project-gallery { grid-template-columns: minmax(0, 1fr); }
+  .project-comparison { grid-template-columns: minmax(0, 1fr); }
+}
