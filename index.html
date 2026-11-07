@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A sample first-year engineering portfolio featuring coursework, prototypes, and design notes.">
+<title>Alex Morgan | Engineering Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<a class="skip" href="#projects">Skip to projects</a>
+<header class="mast"><div class="wrap bar"><a class="mark" href="#top">am<span>.engineering</span></a><nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#notes">Notes</a><a href="#contact">Contact ↗</a></nav></div></header>
+<main class="wrap">
+<section class="hero" aria-labelledby="name">
+<div class="intro">
+<p class="eyebrow"><span class="dot"></span> STUDENT PORTFOLIO / YEAR 01</p>
+<h1 id="name">Alex Morgan<span>.</span></h1>
+<p class="role">First-year engineering student</p>
+<p class="lead">I’m exploring how things work by building small prototypes, measuring what happens, and making the next version better. I’m especially curious about mechanical design, electronics, and the tools that connect them.</p>
+<div class="actions"><a class="button primary" href="#projects">Explore projects ↓</a><a class="button" href="#notes">Read field notes ↗</a></div>
+</div>
+<aside class="profile" aria-labelledby="profile-title">
+<div class="panel-head"><h2 id="profile-title">Profile</h2><span>FILE / 01</span></div>
+<dl><div><dt>Program</dt><dd>First-Year Engineering</dd></div><div><dt>Interests</dt><dd>Mechanical design · Robotics</dd></div><div><dt>Learning</dt><dd>Statics · Circuits · CAD</dd></div><div><dt>Tools</dt><dd>Onshape · Arduino · Python</dd></div></dl>
+<div class="panel-foot"><span class="dot"></span> SAMPLE STUDENT PROFILE</div>
+</aside>
+</section>
+<section class="note" id="notes" aria-labelledby="notes-title">
+<div><p class="eyebrow">FIELD NOTES / 001</p><h2 id="notes-title">What my first bridge taught me</h2><p>A short reflection on testing a design before spending time polishing it.</p></div>
+<details><summary>Read note</summary><p>The first bridge twisted under load before the joints gave way. Adding a diagonal brace made the next model feel steadier, but changing the brace and the joints together made it hard to tell which change mattered most. Next time, I’d keep the joints the same and test the brace on its own.</p></details>
+</section>
+<section id="projects" aria-labelledby="projects-title">
+<div class="section-title"><div><p class="eyebrow">01 / PROJECT ARCHIVE</p><h2 id="projects-title">Projects</h2><p>Coursework, prototypes, and experiments from year one.</p></div><span class="count">03 RECORDS</span></div>
+<div class="project-layout">
+<nav class="index" aria-label="Project index"><div class="panel-head"><strong>Index</strong><span>03</span></div>
+<a href="#bridge"><span>01</span><div>Truss Bridge<small>Structures</small></div></a>
+<a href="#monitor"><span>02</span><div>Room Monitor<small>Electronics</small></div></a>
+<a href="#stand"><span>03</span><div>Adjustable Stand<small>CAD &amp; fabrication</small></div></a>
+</nav>
+<div class="records">
+<article id="bridge" class="record">
+<div class="record-body"><p class="eyebrow">01 / STRUCTURES</p><h3>Truss Bridge</h3><p class="subtitle">A small span with a measurable failure point.</p><p>A basswood bridge built for an introductory design challenge. The team compared truss layouts, sketched the load paths, and added weight in steps to see where the model began to twist.</p><p class="stack"><span>TOOLS</span> Onshape · Basswood · Load testing</p></div>
+<svg class="diagram" viewBox="0 0 240 150" role="img" aria-label="Line drawing of a triangular bridge truss"><path d="M24 108h192L168 48H72L24 108l48-60 48 60 48-60M72 48v60m96-60v60M24 121h192m-192-5v10m192-10v10"/><path class="accent" d="M120 26v28m-5-6 5 6 5-6"/></svg>
+</article>
+<article id="monitor" class="record">
+<div class="record-body"><p class="eyebrow">02 / ELECTRONICS</p><h3>Room Monitor</h3><p class="subtitle">Logging temperature and humidity at a desk.</p><p>An Arduino reads a temperature and humidity sensor and sends the readings to a computer. A Python script plots the data to show how placement near a window changes the measurements.</p><p class="stack"><span>TOOLS</span> Arduino · DHT22 · Python</p></div>
+<svg class="diagram" viewBox="0 0 240 150" role="img" aria-label="Circuit board connected to a sensor with a plotted signal"><rect x="30" y="43" width="80" height="63"/><rect x="56" y="62" width="29" height="25"/><path d="M110 61h23V43h36m-59 38h32v25h27"/><rect x="169" y="36" width="35" height="78"/><path class="accent" d="M175 79h6l4-14 5 24 4-10h4"/></svg>
+</article>
+<article id="stand" class="record">
+<div class="record-body"><p class="eyebrow">03 / CAD &amp; FABRICATION</p><h3>Adjustable Stand</h3><p class="subtitle">A desktop phone stand designed for 3D printing.</p><p>A two-piece stand with slots for different viewing angles. Test prints helped tune the fit of the tabs and leave enough clearance for a charging cable.</p><p class="stack"><span>TOOLS</span> Onshape · FDM printing · Calipers</p></div>
+<svg class="diagram" viewBox="0 0 240 150" role="img" aria-label="Isometric line drawing of an angled phone stand"><path d="m42 110 96 22 58-33-96-22zM70 105l33-68 68 15-33 69m-35-84 5-9 68 15-5 9m5-9-33 69m-73-7 68 16 5-9m-73-7-6-2 8-18 67 15"/><path class="accent" d="m153 105 13-7m-3 12 13-7m-3 12 13-7"/></svg>
+</article>
+</div>
+</div>
+</section>
+<section class="contact" id="contact" aria-labelledby="contact-title"><div><p class="eyebrow">02 / CONTACT</p><h2 id="contact-title">Let’s connect</h2><p>Interested in student design teams, maker projects, and summer learning opportunities.</p><p class="contact-email">Sample email <code>alex.morgan@example.com</code></p></div><a class="button" href="#top">Back to top ↑</a></section>
+</main>
+<footer class="wrap footer"><span>Alex Morgan / Engineering Portfolio</span><span>Illustrative student profile and projects</span></footer>
+</body>
+</html>
